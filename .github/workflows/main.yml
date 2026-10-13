@@ -33,6 +33,8 @@ jobs:
           bun-version: '1.4.2'
       - run: npm ci --ignore-scripts
       - run: node scripts/check-deps.js
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Run C++ tests
         run: |
           cmake -B build/tests -DRTMS_BUILD_TESTS=ON -DCMAKE_BUILD_TYPE=Debug
