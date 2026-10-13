@@ -345,48 +345,15 @@ tasks:
   # Publishing Tasks
   # =============================================================================
 
-  publish:js:
-    desc: "Upload Node.js prebuilds to GitHub Releases (assumes prebuilds exist)"
+  release:pack:
+    desc: "Build Node.js package and native archives for GitHub Releases"
     cmds:
-      - node scripts/publish.js --node
+      - npm run release:pack
 
-  publish:js:full:
-    desc: "Build and upload Node.js prebuilds to GitHub Releases"
-    deps: [prebuild:js]
+  release:test:
+    desc: "Verify installation and native loading of release packages"
     cmds:
-      - node scripts/publish.js --node
-
-  publish:js:linux:
-    desc: "Upload Node.js prebuilds for Linux to GitHub Releases (assumes prebuilds exist)"
-    cmds:
-      - node scripts/publish.js --node --platform linux
-
-  publish:js:darwin:
-    desc: "Upload Node.js prebuilds for macOS to GitHub Releases (assumes prebuilds exist)"
-    cmds:
-      - node scripts/publish.js --node --platform darwin
-
-  publish:py:
-    desc: "Upload Python wheels to PyPI (assumes wheels exist in dist/py)"
-    cmds:
-      - node scripts/publish.js --python --prod
-
-  publish:py:test:
-    desc: "Upload Python wheels to TestPyPI (assumes wheels exist in dist/py)"
-    cmds:
-      - node scripts/publish.js --python --test
-
-  publish:py:full:
-    desc: "Build and upload Python wheels to PyPI"
-    deps: [build:py, build:py:linux]
-    cmds:
-      - node scripts/publish.js --python --prod
-
-  publish:py:test:full:
-    desc: "Build and upload Python wheels to TestPyPI"
-    deps: [build:py, build:py:linux]
-    cmds:
-      - node scripts/publish.js --python --test
+      - npm run release:test
 
   # =============================================================================
   # Utility Tasks
