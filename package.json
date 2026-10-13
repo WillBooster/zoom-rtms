@@ -1,12 +1,14 @@
 {
   "name": "@zoom/rtms",
-  "version": "1.1.0",
-  "description": "Node.js Wrapper for the Zoom RTMS C SDK",
+  "version": "1.1.0-wb.1",
+  "description": "Node.js bindings for Zoom RTMS with transcript configuration fixes",
   "main": "./build/Release/index.js",
   "types": "rtms.d.ts",
   "type": "module",
   "scripts": {
-    "install": "node scripts/install.js"
+    "install": "node scripts/install.js",
+    "release:pack": "node scripts/packageRelease.js",
+    "release:test": "node scripts/testRelease.js"
   },
   "dependencies": {
     "bindings": "^1.5.0",
@@ -47,7 +49,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zoom/rtms.git"
+    "url": "git+https://github.com/WillBooster/zoom-rtms.git"
   },
   "keywords": [
     "zoom",
@@ -60,9 +62,9 @@
     "sdk"
   ],
   "bugs": {
-    "url": "https://github.com/zoom/rtms/issues"
+    "url": "https://github.com/WillBooster/zoom-rtms/issues"
   },
-  "homepage": "https://github.com/zoom/rtms#readme",
+  "homepage": "https://github.com/WillBooster/zoom-rtms#readme",
   "author": "Zoom Communications, Inc.",
   "contributors": [
     {
@@ -82,5 +84,6 @@
   "license": "MIT",
   "engines": {
     "node": ">=22.0.0"
-  }
+  },
+  "private": true
 }
