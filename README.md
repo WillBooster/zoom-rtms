@@ -11,7 +11,7 @@ Use the npm-format package asset from a specific release, rather than GitHub's s
 ```json
 {
   "dependencies": {
-    "@zoom/rtms": "https://github.com/WillBooster/zoom-rtms/releases/download/v1.1.0-wb.1/zoom-rtms-1.1.0-wb.1.tgz"
+    "@zoom/rtms": "https://github.com/WillBooster/zoom-rtms/releases/download/v1.1.0-wb.2/zoom-rtms-1.1.0-wb.2.tgz"
   },
   "trustedDependencies": ["@zoom/rtms"]
 }
