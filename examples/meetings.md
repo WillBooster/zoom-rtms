@@ -5,7 +5,7 @@ Get started with processing real-time media streams from Zoom Meetings.
 ## Prerequisites
 
 ### Node.js
-- Node.js >= 20.3.0 (Node.js 24 LTS recommended)
+- Node.js >= 20.3.0 (Node.js 26.13.0 recommended)
 - Zoom OAuth App with RTMS permissions
 - npm or yarn
 

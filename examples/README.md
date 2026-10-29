@@ -36,7 +36,7 @@ All products support the same RTMS SDK API:
 npm install @zoom/rtms
 ```
 
-Requirements: Node.js >= 20.3.0 (Node.js 24 LTS recommended)
+Requirements: Node.js >= 20.3.0 (Node.js 26.13.0 recommended)
 
 ### Python
 ```bash
@@ -65,7 +65,6 @@ Choose your product and language:
 
 - [Main README](../README.md) - Installation, setup, troubleshooting
 - [API Documentation](https://zoom.github.io/rtms/js/) - Full Node.js API reference
-- [PUBLISHING.md](../PUBLISHING.md) - For maintainers
 - [CONTRIBUTING.md](../CONTRIBUTING.md) - For contributors
 
 ## Support

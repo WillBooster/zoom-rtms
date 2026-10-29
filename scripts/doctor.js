@@ -38,7 +38,7 @@ const colors = {
 const REQUIREMENTS = {
   node: {
     min: '20.3.0',
-    recommended: '24',
+    recommended: '26',
     command: 'node --version',
     parser: (output) => output.trim().replace('v', '')
   },
@@ -163,7 +163,7 @@ function getInstallInstructions(tool) {
  */
 function getUpgradeInstructions(tool) {
   const instructions = {
-    node: 'nvm install 24 or download from https://nodejs.org/',
+    node: 'nvm install 26.13.0 or download from https://nodejs.org/',
     python: 'pyenv install 3.13 or download from https://www.python.org/',
     cmake: 'brew upgrade cmake or download from https://cmake.org/',
     docker: 'Check Docker Desktop for updates',
