@@ -19,7 +19,7 @@ Use the npm-format package asset from a specific release, rather than GitHub's s
 
 `trustedDependencies` is needed when using Bun so that the native binary installer runs. Existing `@zoom/rtms` imports continue to work. The package downloads its native binary from this fork and fails installation if the binary cannot be downloaded or loaded.
 
-Supported binary targets are macOS ARM64 and Linux x64 with glibc 2.34 or later. Node.js 22 or later is required; release checks use Node.js 24 and Bun 1.4.2.
+Supported binary targets are macOS ARM64 and Linux x64 with glibc 2.34 or later. Node.js 22 or later is required; release checks use Node.js 26.13.0 and Bun 1.4.2.
 
 ## Development and releases
 

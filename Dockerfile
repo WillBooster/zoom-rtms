@@ -30,7 +30,7 @@ RUN apt update && apt install -y \
 
 # Install nvm (Node Version Manager) and Node.js
 ENV NVM_DIR="/root/.nvm"
-ENV NODE_VERSION="24"
+ENV NODE_VERSION="26.13.0"
 ENV PATH="/usr/local/node/bin:$PATH"
 
 RUN if [ "$TARGET" = "js" ] || [ "$TARGET" = "all" ]; then \
