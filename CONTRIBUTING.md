@@ -2,7 +2,7 @@
 
 ## Build and verify
 
-Use Node.js 24, Bun 1.4.2, CMake 3.25.1 or later, and a C++20 compiler. Native release builds support macOS ARM64 and Linux x64.
+Use Node.js 26.13.0, Bun 1.4.2, CMake 3.25.1 or later, and a C++20 compiler. Native release builds support macOS ARM64 and Linux x64.
 
 ```sh
 npm ci --ignore-scripts
